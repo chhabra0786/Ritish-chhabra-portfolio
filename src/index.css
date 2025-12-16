@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+*{
+  font-family:Saira, sans-serif; 
+}
+
+@theme {
+  /* ===== BRAND / PRIMARY COLORS ===== */
+  --color-primary-100: #e0e7ff;
+  --color-primary-200: #c7d2fe;
+  --color-primary-300: #a5b4fc;
+  --color-primary-400: #818cf8;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+}
+.typeweiter{
+  overflow:hidden;
+  border-right:0.15em solid #8B5CF6;
+  white-space:nowrap;
+  width:0;
+  animation:typing 3s steps(20,end) forward,blink-caret0.75s,step-end 4;
+
+}
+@keyframes typing{
+  from {width:0},
+  to{width:15ch; }
+}
+@keyframes blink-caret{
+  from,to{border-color:transparent;}
+  50% {border-color:#8B5CF6}
+}
